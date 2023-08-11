@@ -1,0 +1,33 @@
+# /etc/conf.d/pivotalcoind: config file for /etc/init.d/pivotalcoind
+
+# Config file location
+#PIVOTALCOIND_CONFIGFILE="/etc/pivotalcoin/pivotalcoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $PIVOTALCOIND_USER)
+#PIVOTALCOIND_PIDDIR="/var/run/pivotalcoind"
+
+# What filename to give the pidfile
+#PIVOTALCOIND_PIDFILE="${PIVOTALCOIND_PIDDIR}/pivotalcoind.pid"
+
+# Where to write pivotalcoind data (be mindful that the blockchain is large)
+#PIVOTALCOIND_DATADIR="/var/lib/pivotalcoind"
+
+# User and group to own pivotalcoind process
+#PIVOTALCOIND_USER="pivotalcoin"
+#PIVOTALCOIND_GROUP="pivotalcoin"
+
+# Path to pivotalcoind executable
+#PIVOTALCOIND_BIN="/usr/bin/pivotalcoind"
+
+# Nice value to run pivotalcoind under
+#PIVOTALCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#PIVOTALCOIND_OPTS=""
+
+# The timeout in seconds OpenRC will wait for pivotalcoind to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+PIVOTALCOIND_SIGTERM_TIMEOUT=60

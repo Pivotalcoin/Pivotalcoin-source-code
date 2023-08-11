@@ -1,0 +1,4 @@
+qt/qt_libpivotalcoinqt_a-qrc_pivotalcoin.o: qt/qrc_pivotalcoin.cpp \
+ /usr/include/stdc-predef.h
+
+/usr/include/stdc-predef.h:
